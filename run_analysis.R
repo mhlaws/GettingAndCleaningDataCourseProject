@@ -36,4 +36,7 @@ allData <- rbind(dataTest, dataTrain)
 # clean up some of the temporary variables that are no longer needed
 rm(activityTestData, activityTrainData, sensorTestData, sensorTrainData, subjectsTest, subjectsTrain, activityLabels, featureIndices, featureLabels, i, dataTest, dataTrain)
 
+#  print(object.size(tidyData),units = "Mb")
+# 6.9 Mb
 
+library(dplyr)
