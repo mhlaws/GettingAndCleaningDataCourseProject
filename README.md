@@ -3,8 +3,17 @@
 The data for this project came from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 It is comprised of
+
  - test subjects
+ 
  - activity types
+ 
  - sensor data
 
-For the purposes of this course, we only care about sensor data that is either a mean or standard deviation and we want to see all three data categories combined into a single table where each column is a variable and each row is an observation.
+For the sensor data we are only interested in the mean and standard deviation of the raw signals from the accelerometer and the gyroscope.  Computed signals have been discarded!
+
+## R Files
+
+get_data.R will download and extract the raw data sets.
+
+run_analysis.R will clean and tidy the data.  It's output is a single table with all raw sensor data averaged by each activity and each subject.
